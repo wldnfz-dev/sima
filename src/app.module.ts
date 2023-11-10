@@ -35,7 +35,7 @@ import { StatusGuModule } from './status-gu/status-gu.module';
       isGlobal: true
     }),
     TypeOrmModule.forRoot({
-      type : process.env.DATABASE_TYPE as "postgres",
+      type : process.env.DATABASE_TYPE as "mysql",
       host : process.env.DATABASE_HOST,
       port : parseInt(process.env.DATABASE_PORT),
       username : process.env.DATABASE_USERNAME,
