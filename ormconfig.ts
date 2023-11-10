@@ -10,7 +10,7 @@ export const connectionSource = new DataSource({
     password: "",
     database: "sima",
     entities : ["dist/**/*.entity{.ts,.js}"],
-    synchronize : false,
+    synchronize : true,
     migrations: [
         "dist/src/db/migrations/*.{ts,js}",
     ]

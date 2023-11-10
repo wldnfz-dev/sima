@@ -44,7 +44,7 @@ import { StatusGuModule } from './status-gu/status-gu.module';
       entities : [
         "dist/**/*.entity{.ts,.js}"
       ],
-      synchronize : false
+      synchronize : true
     }),
     MailerModule.forRoot({
       transport: {
