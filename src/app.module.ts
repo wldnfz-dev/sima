@@ -27,7 +27,6 @@ import { AuthService } from './auth/auth.service';
 import { FileModule } from './file/file.module';
 import { JaldisModule } from './jaldis/jaldis.module';
 import { StatusGuModule } from './status-gu/status-gu.module';
-import { TestModule } from './test/test.module';
 
 @Module({
   imports: [
@@ -90,7 +89,7 @@ import { TestModule } from './test/test.module';
     SubComponentModule, 
     SubOutputModule, 
     UnitModule, 
-    FileModule, JaldisModule, StatusGuModule, TestModule,
+    FileModule, JaldisModule, StatusGuModule
   ],
   controllers: [AppController, AuthController],
   providers: [AppService, JwtStrategy],
